@@ -2,8 +2,10 @@
 	<head><title>Document</title>
 	<script type="text/javascript">
 		function add()
-		{
-			
+		{	
+			var li= document.createElement("li")
+			var inputVal=document.createElementById("todo").value;
+			//alert("in add function")
 		}
 	</script>
 	</head>
@@ -13,6 +15,7 @@
 		<form>
 			<input type="text" placeholder="Description" id="todo">
 			<button onclick="add()">add</button>
+
 		</form>
 	</body>
 </html>
